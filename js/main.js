@@ -14,9 +14,9 @@
         easingcss3: 'ease',
 
         sectionsColor: [
-            '#f2f2f2',
-            '#4BBFC3',
-            '#7BAABE',
+            '#1976D2',
+            '#4CAF50',
+            '#C2185B',
             'whitesmoke',
             '#000'
         ],
