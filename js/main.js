@@ -1,11 +1,10 @@
-(function () {
-    console.log('Hello World');
+$(document).ready(function () {
     $('#fullpage').fullpage({
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Extra', 'Extra2', 'Extra3'],
 
-         //Scrolling
+        //Scrolling
         css3: true,
         scrollingSpeed: 700,
         autoScrolling: true,
@@ -21,4 +20,4 @@
             '#000'
         ],
     });
-})();
+});
