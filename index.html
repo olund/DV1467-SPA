@@ -2,21 +2,29 @@
 <html>
 <head>
     <title>SPA</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection"/>
 
 
 </head>
 <body>
 
-    <!--<nav class="light-blue lighten-1" role="navigation">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="map.html"><i class="mdi-maps-pin-drop left"></i>Kartvy</a></li>
+        <li><a href="#"><i class="mdi-maps-local-phone left"></i>Kontakta</a></li>
+    </ul>
+
+    <nav class="light-blue lighten-1 navbar-fixed" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" id="logo-container" class="brand-logo">Logo</a>
-                <ul class="right">
-                    <li><a href="#">Navbar link</a></li>
+                <a href="index.html" id="logo-container" class="brand-logo"><img src="img/logo.png" style="margin-top:5px;width:50%;" alt=""></a>
+
+                <ul class="right ">
+                    <li><a href="#"><i class="mdi-action-home left"></i>Hem</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Om<i class="mdi-action-info-outline left"></i></a></li>
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
@@ -24,72 +32,121 @@
                 </ul>
             </div>
         </div>
-    </nav>-->
+    </nav>
 
-    <ul id="menu">
-        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-        <li data-menuanchor="extra"><a href="#extra">Extra</a></li>
-        <li data-menuanchor="extra2"><a href="#extra2">Extra2</a></li>
-        <li data-menuanchor="extra3"><a href="#extra3">Extra3</a></li>
-    </ul>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center red-text">Sjukhuset i Blekinge</h1>
+            <div class="row center">
+                <img src="img/front.jpg" alt="front">
+                <!--<h5 class="header col s12 light">Ett webbaserat sjukhus</h5>-->
+            </div>
+        <div class="row center">
 
-
-
-    <div id="fullpage">
-        <div class="section">
-            First
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
+    </div>
+
+    <div class="container">
         <div class="section">
+            <h4 class="header center red-text text-accent-1 asdf">
+                Aktuellt
+            </h4>
             <div class="row">
-                <div class="col s12 m4 13">
-                    <ul>
-                        <li>Hello</li>
-                        <li>Hello world</li>
-                        <li>Hello world</li>
-                        <li>Hello world</li>
-                    </ul>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/ogon.jpg" alt="">
+                            <span class="card-title">Patientavgifter</span>
+                        </div>
+
+                        <div class="card-content">
+                            <p class="light">
+                                På 1177 Vårdguiden kan du läsa om vilka avgifter som gäller i vården i Blekinge. Avgifterna gäller vård inom Landstinget Blekinge och privat vård som bekostas av Landstinget Blekinge.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col s12 m8 19">
-                    Second
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/webbtv.jpg" alt="webb">
+                            <span class="card-title">Webb-tv</span>
+                        </div>
+
+                        <div class="card-content">
+                            <p class="light">
+                                Landstingsfullmäktiges sammanträden som sker i Landstingssalen filmas och direktsänds på www.ltblekinge.se. Det går också att se alla möten (från och med 20 oktober 2014) i efterhand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/a.jpg" alt="prao">
+                            <span class="card-title">Jobb och prao för unga</span>
+                        </div>
+
+                        <div class="card-content">
+                            <p class="light">
+                            Varje år tar vi emot både praoelever och sommarpraktikanter för att ge unga en insyn i hur det verkligen är att jobba inom vården.
+                            <br><br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
+        <br><br>
+
         <div class="section">
-            Third
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div class="section">
-            Fourth
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit reiciendis ipsum optio iusto ut voluptatum vitae voluptatem facilis aut dolores repellendus quaerat nobis tempore, odit error expedita laboriosam dolorem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit reiciendis ipsum optio iusto ut voluptatum vitae voluptatem facilis aut dolores repellendus quaerat nobis tempore, odit error expedita laboriosam dolorem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit reiciendis ipsum optio iusto ut voluptatum vitae voluptatem facilis aut dolores repellendus quaerat nobis tempore, odit error expedita laboriosam dolorem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit reiciendis ipsum optio iusto ut voluptatum vitae voluptatem facilis aut dolores repellendus quaerat nobis tempore, odit error expedita laboriosam dolorem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit reiciendis ipsum optio iusto ut voluptatum vitae voluptatem facilis aut dolores repellendus quaerat nobis tempore, odit error expedita laboriosam dolorem.
+
         </div>
     </div>
 
+
+
+
+
+    <footer class="page-footer red lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Information</h5>
+                    <p class="grey-text text-lighten-4">
+                       This is just a protoype
+                    </p>
+                </div>
+
+                <div class="col l3 s12 right">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by Henrik Ölund
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="js/jquery.2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script src="js/main.js"></script>

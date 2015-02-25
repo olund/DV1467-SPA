@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    $('#fullpage').fullpage({
+    /*$('#fullpage').fullpage({
         //navigation: true,
        // navigationPosition: 'left',
-        anchors:['home', 'extra', 'extra2', 'extra3'],
+        anchors:['hem', 'information', 'kontakta', 'om'],
         menu: '#menu',
         //navigationTooltips: ['Home', 'Extra', 'Extra2', 'Extra3'],
+        slidesNavigation: true,
 
         //Scrolling
         css3: true,
@@ -28,5 +29,12 @@ $(document).ready(function () {
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+    });*/
+
+    $(".dropdown-button").dropdown({
+        hover: false,
+        constrain_width: false,
+        alignment: 'left',
+        belowOrigin: true
     });
 });
