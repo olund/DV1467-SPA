@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <title>SPA - Kontakta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection"/>
+
+</head>
+<body>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="map.html"><i class="mdi-maps-pin-drop left"></i>Kartvy</a></li>
+        <li><a href="contact.html"><i class="mdi-maps-local-phone left"></i>Kontakta</a></li>
+    </ul>
+
+    <nav class="light-blue lighten-1 navbar-fixed" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" id="logo-container" class="brand-logo"><img src="img/logo.png" style="margin-top:5px;width:50%;" alt=""></a>
+
+                <ul class="right ">
+                    <li><a href="index.html"><i class="mdi-action-home left"></i>Hem</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Om<i class="mdi-action-info-outline left"></i></a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="header">Kontakta</h1>
+        <div class="row">
+
+            <h2>Skicka någon fråga osv..</h2>
+            <form class="col s12">
+                <div class="row">
+
+                    <div class="input-field col s6">
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Namn</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Efternamn</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="mdi-communication-phone prefix"></i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="mdi-communication-email prefix"></i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-cake prefix"></i>
+                        <input id="birthdate" type="text" class="datepicker">
+                        <label for="birthdate">Födelseår</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-editor-mode-edit prefix"></i>
+                        <label for="question">Ställ din fråga</label>
+                        <textarea class="validate materialize-textarea" id="question"></textarea>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer red lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Information</h5>
+                    <p class="grey-text text-lighten-4">
+                       This is just a protoype
+                    </p>
+                </div>
+
+                <div class="col l3 s12 right">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by Henrik Ölund
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
