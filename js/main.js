@@ -29,4 +29,7 @@ $(document).ready(function () {
         complete: function() { /*alert('Closed');*/ } // Callback for Modal close
     });
 
+
+    $('.button-collapse').sideNav(/*{menuWidth: 240, activationWidth: 70}*/);
+
 });

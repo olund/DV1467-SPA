@@ -12,6 +12,23 @@
 </head>
 <body>
 
+    <div class="chat">
+         <a class="waves-effect waves-light modal-trigger" href="#modal1">CHAT</a>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Chatten</h4>
+            <p>Här kan du skriva om dina problem och få svar genast av en riktig doktor!</p>
+            <textarea name="" id="chat-area" cols="50" rows="10"></textarea>
+            <button class="waves-effect waves-light btn">Skicka</button>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Avsluta</a>
+        </div>
+    </div>
+
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="map.html"><i class="mdi-maps-pin-drop left"></i>Kartvy</a></li>
         <li><a href="contact.html"><i class="mdi-maps-local-phone left"></i>Kontakta</a></li>
@@ -20,15 +37,22 @@
     <nav class="light-blue lighten-1 navbar-fixed" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" id="logo-container" class="brand-logo"><img src="img/logo.png" style="margin-top:5px;width:50%;" alt=""></a>
+                <a href="index.html" id="logo-container">
+                    <img class="brand-logo" src="img/logo.png" alt="">
+                </a>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
 
                 <ul class="right ">
                     <li><a href="index.html"><i class="mdi-action-home left"></i>Hem</a></li>
+                    <li><a class="modal-trigger" href="#modal1"><i class="mdi-communication-chat left"></i>Chat</a></li>
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Om<i class="mdi-action-info-outline left"></i></a></li>
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="contact.html">Kontakta</a></li>
+                    <li><a href="map.html">Kartvy</a></li>
                 </ul>
             </div>
         </div>

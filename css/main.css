@@ -1,3 +1,12 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container, main {
+    flex: 1 0 auto;
+}
 #menu li {
     display:inline-block;
     margin: 10px;
@@ -52,6 +61,7 @@ div#googleMap {
     height: 100px;
     top: 30vh;
     background: #29b6f6;
+    z-index: 100;
 }
 
 .chat a {
@@ -62,7 +72,26 @@ div#googleMap {
     word-wrap: break-word;
 }
 
-textarea#chat-area {
-    resize: none;
-    height: 20vh;
+
+footer.page-footer {
+    margin-top: 0px;
+}
+
+img.brand-logo {
+    max-width: 135px;
+    margin-top: -25px;
+}
+
+.materialize-textarea {
+    height: 30vh !important;
+}
+
+.front-image {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .brand-logo {
+        display: none;
+    }
 }
