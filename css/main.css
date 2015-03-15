@@ -95,3 +95,7 @@ img.brand-logo {
         display: none;
     }
 }
+
+.modal-footer button {
+    margin-left: 10px !important;
+}
