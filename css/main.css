@@ -99,3 +99,7 @@ img.brand-logo {
 .modal-footer button {
     margin-left: 10px !important;
 }
+
+textarea#chat-area {
+    height: 30vh !important;
+}
